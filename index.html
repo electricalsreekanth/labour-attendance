@@ -1,0 +1,371 @@
+<div id="gsc-att">
+<style>
+#gsc-att{max-width:640px;margin:0 auto;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1b2733;background:#fff;line-height:1.35;font-size:16px;text-align:left}
+#gsc-att *{box-sizing:border-box}
+#gsc-att [hidden]{display:none!important}
+#gsc-att button,#gsc-att input{font-family:inherit;font-size:inherit;margin:0}
+#gsc-att .ga-head{background:#12355b;color:#fff;padding:14px 16px 16px;border-radius:0 0 14px 14px}
+#gsc-att .ga-title{font-size:12px;letter-spacing:1.5px;font-weight:700;opacity:.8}
+#gsc-att .ga-date{font-size:22px;font-weight:800;margin:4px 0 10px}
+#gsc-att .ga-meta{display:flex;gap:8px;flex-wrap:wrap}
+#gsc-att .ga-meta input{flex:1 1 140px;min-width:0;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;padding:9px 10px;font-size:15px;outline:none}
+#gsc-att .ga-meta input::placeholder{color:rgba(255,255,255,.6)}
+#gsc-att .ga-tabs{display:flex;margin-top:6px}
+#gsc-att .ga-tabs button{flex:1;background:#fff;border:0;border-bottom:3px solid #e1e6ec;padding:13px 6px;font-weight:700;color:#6b7785;cursor:pointer}
+#gsc-att .ga-tabs button.on{color:#12355b;border-bottom-color:#f08a24}
+#gsc-att .ga-warn{background:#fff4e5;color:#8a4b00;border:1px solid #f5c98a;border-radius:8px;margin:10px 12px 0;padding:9px 12px;font-size:14px}
+#gsc-att .ga-sum{display:flex;gap:8px;padding:12px 12px 8px}
+#gsc-att .ga-box{flex:1;border-radius:10px;padding:8px 6px;text-align:center;background:#eef2f6}
+#gsc-att .ga-box b{display:block;font-size:24px;line-height:1.1}
+#gsc-att .ga-box span{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+#gsc-att .ga-box.p{background:#e3f6e9;color:#137a3a}
+#gsc-att .ga-box.a{background:#fdecec;color:#b42318}
+#gsc-att .ga-upd{font-size:12px;color:#7a8793;text-align:right;padding:0 14px 6px}
+#gsc-att .ga-row{display:flex;align-items:center;width:100%;text-align:left;background:#fff;border:0;border-bottom:1px solid #e4e9ef;padding:12px 14px;min-height:50px;cursor:pointer;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;color:#1b2733}
+#gsc-att .ga-no{width:30px;flex:none;font-size:14px;color:#7a8793}
+#gsc-att .ga-nm{flex:1;font-weight:700;letter-spacing:.2px;padding-right:8px}
+#gsc-att .ga-pill{flex:none;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.5px;background:#e3f6e9;color:#137a3a}
+#gsc-att .ga-row.abs{background:#fff3f2}
+#gsc-att .ga-row.abs .ga-nm{color:#b42318}
+#gsc-att .ga-row.abs .ga-pill{background:#d92d20;color:#fff}
+#gsc-att .ga-actions{display:flex;gap:8px;padding:14px 12px 4px;flex-wrap:wrap}
+#gsc-att .ga-btn{flex:1 1 140px;border:1px solid #c9d2dc;background:#fff;color:#12355b;border-radius:10px;padding:11px 12px;font-weight:700;cursor:pointer}
+#gsc-att .ga-btn.main{background:#12355b;border-color:#12355b;color:#fff}
+#gsc-att .ga-empty{text-align:center;color:#6b7785;padding:30px 20px}
+#gsc-att .ga-empty .ga-btn{margin-top:12px;flex:none;width:auto;padding:11px 22px}
+#gsc-att .ga-add{display:flex;gap:8px;padding:12px 12px 6px}
+#gsc-att .ga-add input,#gsc-att .ga-search{flex:1;min-width:0;border:1px solid #c9d2dc;border-radius:10px;padding:11px 12px;outline:none;background:#fff;color:#1b2733}
+#gsc-att .ga-add .ga-btn{flex:none;width:auto;padding:11px 18px}
+#gsc-att .ga-tools{display:flex;gap:8px;padding:6px 12px;align-items:center}
+#gsc-att .ga-tools .ga-search{width:100%}
+#gsc-att .ga-cnt{padding:4px 14px 8px;font-size:14px;color:#6b7785;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+#gsc-att .ga-cnt button{border:0;background:none;color:#12355b;font-weight:700;padding:6px 4px;cursor:pointer;font-size:14px}
+#gsc-att .ga-trow{display:flex;align-items:center;border-bottom:1px solid #e4e9ef;padding-right:6px}
+#gsc-att .ga-tpick{flex:1;display:flex;align-items:center;gap:12px;padding:12px 14px;cursor:pointer;min-width:0}
+#gsc-att .ga-tpick input{width:22px;height:22px;flex:none;accent-color:#12355b}
+#gsc-att .ga-tpick span{font-weight:700;overflow-wrap:anywhere}
+#gsc-att .ga-ic{flex:none;width:40px;height:40px;border:0;background:none;font-size:18px;cursor:pointer;color:#6b7785;border-radius:8px}
+#gsc-att .ga-ic.del{color:#b42318}
+#gsc-att .ga-done{padding:14px 12px 20px}
+#gsc-att .ga-done .ga-btn{width:100%}
+#gsc-att .ga-exit{display:none;text-align:center;padding:16px}
+#gsc-att .ga-exit button{border:0;background:none;color:#8a95a1;font-size:13px;text-decoration:underline;cursor:pointer}
+#gsc-att.shot .ga-tabs,#gsc-att.shot .ga-actions{display:none}
+#gsc-att.shot .ga-exit{display:block}
+#gsc-att.shot .ga-row{padding:7px 14px;min-height:0;cursor:default}
+#gsc-att.shot .ga-meta input{border-color:transparent;background:none;padding:2px 0;font-weight:700;pointer-events:none}
+#gsc-att.shot .ga-meta input::placeholder{color:transparent}
+#gsc-att.shot .ga-head{padding-bottom:10px}
+</style>
+
+<div class="ga-head">
+  <div class="ga-title">DAILY LABOUR ATTENDANCE</div>
+  <div class="ga-date" id="ga-date"></div>
+  <div class="ga-meta">
+    <input id="ga-foreman" type="text" placeholder="Foreman name" maxlength="40">
+    <input id="ga-site" type="text" placeholder="Site / Project" maxlength="50">
+  </div>
+</div>
+
+<div class="ga-tabs">
+  <button type="button" id="ga-tab-att" class="on">Attendance</button>
+  <button type="button" id="ga-tab-team">My Team</button>
+</div>
+
+<div class="ga-warn" id="ga-warn" hidden>Browser storage is blocked (private mode?). Your team and attendance will not be saved.</div>
+
+<section id="ga-pg-att">
+  <div class="ga-sum">
+    <div class="ga-box"><b id="ga-n-tot">0</b><span>Total</span></div>
+    <div class="ga-box p"><b id="ga-n-pre">0</b><span>Present</span></div>
+    <div class="ga-box a"><b id="ga-n-abs">0</b><span>Absent</span></div>
+  </div>
+  <div class="ga-upd" id="ga-upd" hidden></div>
+  <div id="ga-list"></div>
+  <div class="ga-empty" id="ga-empty" hidden>
+    No labourers selected yet.<br>Pick the people working with you today.
+    <br><button type="button" class="ga-btn main" id="ga-goteam">Select my team</button>
+  </div>
+  <div class="ga-actions" id="ga-actions">
+    <button type="button" class="ga-btn" id="ga-allp">Mark all present</button>
+    <button type="button" class="ga-btn main" id="ga-shot">Screenshot view</button>
+  </div>
+  <div class="ga-exit"><button type="button" id="ga-exit">Exit screenshot view</button></div>
+</section>
+
+<section id="ga-pg-team" hidden>
+  <div class="ga-add">
+    <input id="ga-new" type="text" placeholder="Add a new name" maxlength="40">
+    <button type="button" class="ga-btn main" id="ga-addbtn">Add</button>
+  </div>
+  <div class="ga-tools"><input class="ga-search" id="ga-q" type="search" placeholder="Search names"></div>
+  <div class="ga-cnt">
+    <span id="ga-tcount"></span>
+    <span><button type="button" id="ga-selall">Select all</button><button type="button" id="ga-clrall">Clear all</button></span>
+  </div>
+  <div id="ga-tlist"></div>
+  <div class="ga-done"><button type="button" class="ga-btn main" id="ga-done">Done - go to attendance</button></div>
+</section>
+
+<script>
+(function () {
+  var SEED = ["RAKESH","SUMAN","PINTU","BHIM","YUVDNOOS","FIRANGUR","KAWSAR","SAIFULA","PREM MAJHI","MANISH KUMAR","TAPAN KUMAR","RIAZ","RAMA","SAID","KHALIL","ELIASH","HIRALAL","IRSAD","ABDULA","HAIDAR","ANSAR DRIVER","SANTOSH KUMAR","SANI","BAYSA","ABU BAKKR","SIVKARAN","AMEEN","RAHMAT","HILERY","NIRMAL SING","MOHAMMD PENTAR","ASTONY","ABDISA","SYAM SUNDAR","ABDUL","SHOHEL","AKRAM","RAKESH MASON","NURUL","NAGEENA","JAVED","SAHABUDDIN","AKALU","MURSEED","MUKESH","JIYAD DRIVAR","EQBAL DRIVAR","TAHSEEN DRIVAR","RAM PARVESH"];
+
+  var K_MASTER = "gscl_master_v1", K_TEAM = "gscl_team_v1", K_ATT = "gscl_att_", K_META = "gscl_meta_v1";
+  var storageOK = true;
+
+  function $(id) { return document.getElementById(id); }
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) { n.className = cls; }
+    if (text !== undefined) { n.textContent = text; }
+    return n;
+  }
+  function pad(n) { return n > 9 ? "" + n : "0" + n; }
+  function dayKey(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+  function has(arr, id) { return arr.indexOf(id) !== -1; }
+  function warn() { $("ga-warn").hidden = false; }
+
+  function load(k, def) {
+    try {
+      var v = window.localStorage.getItem(k);
+      return v ? JSON.parse(v) : def;
+    } catch (e) { storageOK = false; return def; }
+  }
+  function save(k, v) {
+    try { window.localStorage.setItem(k, JSON.stringify(v)); }
+    catch (e) { storageOK = false; warn(); }
+  }
+
+  /* ---------- state ---------- */
+  var master = load(K_MASTER, null);
+  if (!master) {
+    master = SEED.map(function (n, i) { return { id: i + 1, name: n }; });
+    save(K_MASTER, master);
+  }
+  var team = load(K_TEAM, []);
+  var meta = load(K_META, { foreman: "", site: "" });
+  var today = dayKey(new Date());
+  var att = load(K_ATT + today, { absent: [], t: 0 });
+  var root = $("gsc-att");
+
+  if (!storageOK) { warn(); }
+  try {
+    if (navigator.storage) {
+      if (navigator.storage.persist) { navigator.storage.persist(); }
+    }
+  } catch (e) {}
+
+  function nextId() {
+    var m = 0;
+    master.forEach(function (x) { if (x.id > m) { m = x.id; } });
+    return m + 1;
+  }
+  function members() { return master.filter(function (m) { return has(team, m.id); }); }
+  function nameTaken(name, exceptId) {
+    return master.some(function (x) { return x.name === name ? x.id !== exceptId : false; });
+  }
+  function cleanName(v) { return v.replace(/\s+/g, " ").trim().toUpperCase(); }
+
+  /* ---------- attendance page ---------- */
+  function renderDate() {
+    $("ga-date").textContent = new Date().toLocaleDateString("en-GB", {
+      weekday: "long", day: "numeric", month: "long", year: "numeric"
+    });
+  }
+
+  function renderSummary() {
+    var mem = members();
+    var abs = mem.filter(function (m) { return has(att.absent, m.id); }).length;
+    $("ga-n-tot").textContent = mem.length;
+    $("ga-n-pre").textContent = mem.length - abs;
+    $("ga-n-abs").textContent = abs;
+    var u = $("ga-upd");
+    if (att.t) {
+      var d = new Date(att.t);
+      u.textContent = "Last updated " + pad(d.getHours()) + ":" + pad(d.getMinutes());
+      u.hidden = false;
+    } else {
+      u.hidden = true;
+    }
+  }
+
+  function applyRow(btn, pill, absent) {
+    btn.className = "ga-row" + (absent ? " abs" : "");
+    pill.textContent = absent ? "ABSENT" : "PRESENT";
+  }
+
+  function renderAtt() {
+    var list = $("ga-list");
+    list.innerHTML = "";
+    var mem = members();
+    $("ga-empty").hidden = mem.length > 0;
+    $("ga-actions").style.display = mem.length > 0 ? "" : "none";
+    mem.forEach(function (m, i) {
+      var btn = el("button", "ga-row");
+      btn.type = "button";
+      var pill = el("span", "ga-pill");
+      btn.appendChild(el("span", "ga-no", String(i + 1)));
+      btn.appendChild(el("span", "ga-nm", m.name));
+      btn.appendChild(pill);
+      applyRow(btn, pill, has(att.absent, m.id));
+      btn.onclick = function () {
+        if (root.className.indexOf("shot") !== -1) { return; }
+        var idx = att.absent.indexOf(m.id);
+        if (idx === -1) { att.absent.push(m.id); } else { att.absent.splice(idx, 1); }
+        att.t = Date.now();
+        save(K_ATT + today, att);
+        applyRow(btn, pill, idx === -1);
+        renderSummary();
+      };
+      list.appendChild(btn);
+    });
+    renderSummary();
+  }
+
+  /* ---------- team page ---------- */
+  function renderTeamCount() {
+    $("ga-tcount").textContent = members().length + " selected of " + master.length;
+  }
+
+  function renderTeam() {
+    var q = $("ga-q").value.trim().toUpperCase();
+    var box = $("ga-tlist");
+    box.innerHTML = "";
+    master.forEach(function (m) {
+      if (q) { if (m.name.indexOf(q) === -1) { return; } }
+      var row = el("div", "ga-trow");
+      var lab = el("label", "ga-tpick");
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = has(team, m.id);
+      cb.onchange = function () {
+        var idx = team.indexOf(m.id);
+        if (cb.checked) { if (idx === -1) { team.push(m.id); } }
+        else if (idx !== -1) { team.splice(idx, 1); }
+        save(K_TEAM, team);
+        renderTeamCount();
+      };
+      lab.appendChild(cb);
+      lab.appendChild(el("span", "", m.name));
+      var ed = el("button", "ga-ic", "\u270E");
+      ed.type = "button";
+      ed.setAttribute("aria-label", "Edit " + m.name);
+      ed.onclick = function () {
+        var v = window.prompt("Edit name", m.name);
+        if (v === null) { return; }
+        v = cleanName(v);
+        if (!v) { return; }
+        if (nameTaken(v, m.id)) { window.alert("That name is already in the list."); return; }
+        m.name = v;
+        save(K_MASTER, master);
+        renderTeam();
+      };
+      var del = el("button", "ga-ic del", "\u2715");
+      del.type = "button";
+      del.setAttribute("aria-label", "Delete " + m.name);
+      del.onclick = function () {
+        if (!window.confirm("Delete " + m.name + " from the list?")) { return; }
+        master = master.filter(function (x) { return x.id !== m.id; });
+        team = team.filter(function (id) { return id !== m.id; });
+        save(K_MASTER, master);
+        save(K_TEAM, team);
+        renderTeam();
+      };
+      row.appendChild(lab);
+      row.appendChild(ed);
+      row.appendChild(del);
+      box.appendChild(row);
+    });
+    renderTeamCount();
+  }
+
+  function bulk(select) {
+    var q = $("ga-q").value.trim().toUpperCase();
+    master.forEach(function (m) {
+      if (q) { if (m.name.indexOf(q) === -1) { return; } }
+      var idx = team.indexOf(m.id);
+      if (select) { if (idx === -1) { team.push(m.id); } }
+      else if (idx !== -1) { team.splice(idx, 1); }
+    });
+    save(K_TEAM, team);
+    renderTeam();
+  }
+
+  function addName() {
+    var inp = $("ga-new");
+    var v = cleanName(inp.value);
+    if (!v) { return; }
+    if (nameTaken(v, 0)) { window.alert("That name is already in the list."); return; }
+    var id = nextId();
+    master.push({ id: id, name: v });
+    team.push(id);
+    save(K_MASTER, master);
+    save(K_TEAM, team);
+    inp.value = "";
+    $("ga-q").value = "";
+    renderTeam();
+  }
+
+  /* ---------- tabs ---------- */
+  function setTab(t) {
+    var isAtt = t === "att";
+    $("ga-pg-att").hidden = !isAtt;
+    $("ga-pg-team").hidden = isAtt;
+    $("ga-tab-att").className = isAtt ? "on" : "";
+    $("ga-tab-team").className = isAtt ? "" : "on";
+    if (isAtt) { renderAtt(); } else { renderTeam(); }
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- wiring ---------- */
+  $("ga-foreman").value = meta.foreman || "";
+  $("ga-site").value = meta.site || "";
+  function saveMeta() {
+    meta.foreman = $("ga-foreman").value;
+    meta.site = $("ga-site").value;
+    save(K_META, meta);
+  }
+  $("ga-foreman").oninput = saveMeta;
+  $("ga-site").oninput = saveMeta;
+
+  $("ga-tab-att").onclick = function () { setTab("att"); };
+  $("ga-tab-team").onclick = function () { setTab("team"); };
+  $("ga-goteam").onclick = function () { setTab("team"); };
+  $("ga-done").onclick = function () { setTab("att"); };
+  $("ga-q").oninput = renderTeam;
+  $("ga-selall").onclick = function () { bulk(true); };
+  $("ga-clrall").onclick = function () { bulk(false); };
+  $("ga-addbtn").onclick = addName;
+  $("ga-new").onkeydown = function (e) { if (e.key === "Enter") { addName(); } };
+
+  $("ga-allp").onclick = function () {
+    if (att.absent.length === 0) { return; }
+    if (!window.confirm("Mark everyone present again?")) { return; }
+    att.absent = [];
+    att.t = Date.now();
+    save(K_ATT + today, att);
+    renderAtt();
+  };
+  $("ga-shot").onclick = function () { root.className = "shot"; window.scrollTo(0, 0); };
+  $("ga-exit").onclick = function () { root.className = ""; };
+
+  /* new day: reset to everyone present, keep the team */
+  function checkDay() {
+    var now = dayKey(new Date());
+    if (now !== today) {
+      today = now;
+      att = load(K_ATT + today, { absent: [], t: 0 });
+      renderDate();
+      renderAtt();
+    }
+  }
+  document.addEventListener("visibilitychange", checkDay);
+  window.addEventListener("focus", checkDay);
+  setInterval(checkDay, 60000);
+
+  renderDate();
+  setTab(members().length > 0 ? "att" : "team");
+})();
+</script>
+</div>
